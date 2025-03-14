@@ -1,0 +1,26 @@
+.link {
+    display: flex;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 12px;
+    border-radius: 12px;
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        transition: 0.3s;
+        background-color: black;
+.icon{
+    color: white;
+}
+        a {
+            color: white;
+        }
+    }
+
+}

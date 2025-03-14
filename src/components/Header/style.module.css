@@ -10,6 +10,7 @@ header {
         border: 0;
         background: transparent;
         cursor: pointer;
+
         @media (max-width: 520px) {
             display: flex;
         }
@@ -20,7 +21,8 @@ header {
         border: 0;
         background: transparent;
         cursor: pointer;
-        @media (max-width:880px){
+
+        @media (max-width:880px) {
             display: flex;
         }
     }
@@ -30,7 +32,8 @@ header {
         flex-wrap: wrap;
         gap: 10px;
         align-items: center;
-        @media (max-width:520px){
+
+        @media (max-width:520px) {
             display: none;
         }
     }
@@ -69,10 +72,158 @@ header {
         &:focus-within {
             outline: 2px solid #46f246;
         }
-        @media (max-width:880px){
+
+        @media (max-width:880px) {
             display: none;
         }
     }
 
 
+}
+
+.overlaymenuLateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.menulateral {
+    background-color: #fff;
+    width: 250px;
+    max-width: 80%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        background: none;
+        border: 0;
+    }
+}
+
+.fechar {
+    transition: 0.2s;
+
+    &:hover {
+        color: red;
+    }
+}
+
+.caminhos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+
+
+
+
+
+    .botaologin {
+        padding: 10px;
+        background-color: #36c636;
+        border: 0;
+        transition: 0.3s;
+        border-radius: 12px;
+        font-size: 17px;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: #fff;
+            border: 2px solid #36c636;
+        }
+    }
+}
+
+.overlayPesquisar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.pesquisaContainer {
+    display: flex;
+    padding: 16px;
+    border-radius: 12px 22px;
+    align-items: center;
+    background-color: #fff;
+    gap: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+}
+
+.pesquisarInput {
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.overlayLogin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 12px 22px;
+    align-items: center;
+}
+
+.loginInput {
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.enviar {
+    border: 3px solid #36c636;
+    border-radius: 8px;
+    background: transparent;
+    width: 100px;
+}
+
+.loginIcon {
+    display: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    @media (max-width:880px) {
+        display: flex;
+    }
 }
